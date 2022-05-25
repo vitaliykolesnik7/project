@@ -1,0 +1,121 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*============================================================================================================*/
+
+body {
+  padding: 30px;
+}
+
+input {
+  width: 30px;
+  border: ridge 5px red;
+}
+
+.text {
+  font-style: 24px;
+  line-height: 30px;
+  margin: 0 0 20px 0;
+}
+
+.text::first-line {
+  color: aquamarine;
+}
+.text::first-letter {
+  font-size: 60px;
+}
+
+.list li {
+  font-size: 24px;
+  margin: 0 0 24px 0;
+}
+
+.list li::before {
+  content: "   ";
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+}
+.list li::after {
+  content: " » ";
+}
+
+.list li:hover::before {
+  background-color: aqua;
+  margin: 0 55px 0 0;
+}

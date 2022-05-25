@@ -1,0 +1,52 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+//& - повторяет родителя, можно использовать если несколько класов для лдного тега
+//$fz - переменные
+//%tpborder - создание шаблона с параметрами
+//@mixin  fontz($f,$c)-мы можем менять значения
+// sass может также сразу делать математику для вычесления размеров или текста или блоков
+
+.about {
+  &__body {
+  }
+  &__header {
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__text {
+  }
+  &__row {
+  }
+  &__column {
+  }
+}
+.title {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 8.95px;
+  position: relative;
+  text-align: center;
+  padding: 0px 0px 30px 0px;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    bottom: 0;
+    height: 1px;
+    left: 50%;
+    background-color: #000;
+    margin: 0 0 0 -25px;
+  }
+}
+
+.item-about {
+  &__icon {
+  }
+  &__title {
+  }
+  &__text {
+  }
+}

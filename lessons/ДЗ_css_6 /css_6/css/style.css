@@ -1,0 +1,303 @@
+/* /* /* /* /*----------------------------обнуляет все стили до 0--------------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------------------------обнуляет все стили до 0--------------------------------*/
+body {
+  width: 1440px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #e8e8e8;
+}
+
+.list,
+text34 {
+  padding: 123px 0px 0px 290px;
+  font-size: 20px;
+  line-height: 36px;
+  color: #273d46;
+}
+
+.list_1 p {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.list_group_1 li {
+  background: url("../img/icons/check\ icon\ \(1\).png") left no-repeat;
+  padding: 0 0 0 36px;
+}
+
+.list_group_1 li:nth-child(1) {
+  text-decoration: line-through;
+}
+
+.list_group_1 li:nth-child(2) {
+  font-weight: 700;
+}
+
+.list_group_1 li:nth-child(3) {
+  font-style: italic;
+}
+
+.list_group_1 li:nth-child(4) {
+  text-transform: uppercase;
+}
+/* Второй список */
+
+.positioned {
+  position: absolute;
+  left: -190px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.list_2 {
+  margin: 30px 0 0 0;
+}
+.list_group_2 li {
+  background: url("../img/icons/check\ icon\ \(1\).png") left no-repeat;
+  padding: 0 0 0 36px;
+}
+*/ .list_group_2 li:nth-child(2) {
+  font-weight: 700;
+}
+.list_group_2 li:nth-child(2):hover {
+  color: brown;
+  background: url("../img/icons/check\ icon.png") left no-repeat;
+}
+
+.textbutton {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 137px 0 0 315px;
+  justify-content: space-evenly;
+  width: 790px;
+}
+.button_1 {
+  height: 44px;
+  width: 199px;
+  line-height: 44px;
+  border-radius: 30px;
+  background-color: #80b7b3;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  box-shadow: 0px 0px 15px 0px #80b7b3;
+}
+
+.button_1 span {
+  padding: 0 30px 0 0;
+  background: url("../img/icons/Shape\ 2.svg") right no-repeat;
+}
+
+.button_2 {
+  height: 44px;
+  width: 199px;
+  line-height: 44px;
+  border-radius: 30px;
+  background-color: #80b7b3;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+.button_2:hover {
+  background-color: #3a5855;
+}
+
+.button_2 span {
+  padding: 0 30px 0 0;
+  background: url("../img/icons/Shape\ 2.svg") right no-repeat;
+}
+
+.button_3 {
+  height: 44px;
+  width: 199px;
+  line-height: 44px;
+  border-radius: 30px;
+  background-color: #80b7b3;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+.button_3:active {
+  background-color: #818181;
+}
+
+.button_3 span {
+  padding: 0 30px 0 0;
+  background: url("../img/icons/Shape\ 2.svg") right no-repeat;
+}
+
+.input {
+  padding: 0 0 0 290px;
+  display: flex;
+  flex-direction: row;
+  margin: 125px 0 0 0;
+}
+
+.input_text_1 {
+  height: 50px;
+  width: 292px;
+  border: 1px solid #e41212;
+}
+
+.input_text_21 {
+  border: 1px solid #e41212;
+  height: 50px;
+  width: 292px;
+}
+.textbutton label {
+  display: flex;
+  padding-bottom: 14px;
+  padding-left: 50px;
+  text-transform: uppercase;
+}
+
+.input label {
+  display: flex;
+  padding-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.input_text_2 {
+  padding-left: 50px;
+}
+
+.input_text_21:focus {
+  box-shadow: 0 0 30px rgba(127, 190, 213, 1);
+}
+
+.input_text_21:hover {
+  box-shadow: 0 0 30px rgb(201, 64, 110, 0.5);
+}
+
+.input_text_21 title {
+  text-transform: uppercase;
+  color: #e41212;
+  background-color: #80b7b3;
+}
+.list_group_1 :hover:before {
+  content: "";
+  display: inline-block;
+  background: url("../img/icons/check\ icon\ \(1\).png") left no-repeat;
+  margin: 0 0 0 36px;
+}
+.text34 {
+  padding: 123px 0px 0px 290px;
+  font-size: 20px;
+  line-height: 36px;
+  color: #273d46;
+}
+
+.text34 p:nth-child(2) {
+  padding: 60px 0 0 0;
+}
+
+.text34 p:nth-child(2)::first-line {
+  color: #e41212;
+  font-size: 60px;
+}
+
+.text34 p:nth-child(1)::first-letter {
+  color: aquamarine;
+  font-size: 90px;
+  font-family: initial;
+}
+
+.text34 p:nth-child(2):hover::first-line {
+  color: #3a5855;
+}

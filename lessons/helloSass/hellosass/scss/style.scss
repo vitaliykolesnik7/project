@@ -1,0 +1,56 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+//& - повторяет родителя, можно использовать если несколько класов для лдного тега
+//$fz - переменные
+//%tpborder - создание шаблона с параметрами
+//@mixin  fontz($f,$c)-мы можем менять значения
+// sass может также сразу делать математику для вычесления размеров или текста или блоков
+
+$bg: 50px;
+$fz: 5px;
+$color_1: rgba(244, 248, 10, 0.89);
+$color_2: rgb(23, 33, 179);
+%tplborder {
+  border-bottom: 2px dashed rgba(3, 46, 163, 0.911);
+}
+//миксин
+@mixin fontz($f, $c) {
+  font-size: $f;
+  background-color: $c;
+}
+
+.block {
+  width: 300px/960px * 100%;
+  padding: 30px;
+  line-height: 30px;
+  background-color: aqua;
+  .block_text {
+    font-size: $bg;
+    span {
+      color: rgb(52, 224, 9);
+    }
+  }
+}
+.link {
+  color: rgb(204, 79, 57);
+  text-decoration: underline;
+  font-size: $bg;
+  &:hover {
+    color: $color_1;
+  }
+  @extend %tplborder;
+}
+
+.link-2 {
+  @extend %tplborder;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: $bg;
+
+  &:hover {
+    @include fontz(90px, green);
+  }
+  &:active {
+    font-size: 20px;
+  }
+}

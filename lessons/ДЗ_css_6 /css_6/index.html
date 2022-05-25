@@ -1,0 +1,79 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+  <!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+  <head>
+    <!-- Заголовок страницы в браузере -->
+    <title>Css. Часть №4 (свойства блоков - отступы, размеры, характеристики)</title>
+    <!-- Подключаемый CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Кодировка страницы -->
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  </head>
+  <!-- Отображаемое тело страницы -->
+  <body>
+    <div class="list">
+      <div class="list_1">
+        <p>Стилизируй с помощью псевдоклассов</p>
+        <ul class="list_group_1">
+          <li>Put on this page information about your product</li>
+          <li>A detailed description of your product</li>
+          <li>Tell us about the advantages and merits</li>
+          <li>Associate the page with the payment system</li>
+        </ul>
+      </div>
+
+      <div class="list_2">
+        <ul class="list_group_2">
+          <li>Tell us about the advantages and</li>
+          <li style="position: relative">
+            <span class="positioned">При наведении ></span>A detailed description of your product
+          </li>
+          <li>Associate the page with the payment system</li>
+          <li>Put on this page information about your product</li>
+        </ul>
+      </div>
+    </div>
+    <div class="textbutton">
+      <div>
+        <label for="textbutton_label_1">Без нажатия</label>
+        <button class="button_1" type="submit"><span>Full Story</span></button>
+      </div>
+      <div>
+        <label for="textbutton_label_2">При наведении</label>
+        <button class="button_2" type="submit"><span>Full Story</span></button>
+      </div>
+      <div>
+        <form action="http://google.com">
+          <label for="">При наведении</label>
+          <button class="button_3" type="submit"><span>Full Story</span></button>
+        </form>
+      </div>
+    </div>
+    <div class="input">
+      <div>
+        <form action="" method="post">
+          <label for="lable_text_1">Пустая запись</label>
+          <input class="input_text_1" type="text" placeholder="name" />
+        </form>
+      </div>
+      <div class="input_text_2">
+        <form action="" method="post">
+          <label title="привет" class="lable_text_2" for="">фокус</label>
+          <input title="привет" class="input_text_21" type="text" placeholder="lastName" />
+        </form>
+      </div>
+    </div>
+    <div class="text34">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo delectus amet odit iusto a rerum autem odio ab,
+        quae excepturi nisi quaerat minus optio dolore facilis laborum quis ex quod!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet atque reiciendis, sint eius accusantium, quod
+        alias velit quam placeat architecto ab sapiente incidunt culpa quasi iusto nisi illo qui hic.
+      </p>
+    </div>
+  </body>
+</html>

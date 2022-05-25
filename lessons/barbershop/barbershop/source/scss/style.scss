@@ -1,0 +1,34 @@
+//Подключение шрифтов
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;700&family=Dancing+Script&family=Montserrat:wght@400;700&family=PT+Sans:ital@0;1&family=Roboto&display=swap");
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+body {
+  font-family: "Catamaran";
+  width: 1920px;
+}
+
+.hedear {
+  font-size: 25px;
+  color: white;
+}
+.home {
+  background-color: #a3c1ef;
+  border-radius: 5px;
+  width: 93px;
+  height: 138px;
+  color: white;
+  top: -30px;
+}
+.scissors_1 {
+  position: absolute;
+  margin-top: 6.18px;
+  margin-left: 169.39px;
+}
+
+.logo_1 {
+  position: absolute;
+  margin-top: 59px;
+  margin-left: 244px;
+  filter: drop-shadow(0px 4px 4px rgb(0, 0, 0, 0.25));
+}
