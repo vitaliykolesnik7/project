@@ -19,38 +19,14 @@ $color_2: rgb(23, 33, 179);
   font-size: $f;
   background-color: $c;
 }
-
-.block {
-  width: 300px/960px * 100%;
-  padding: 30px;
-  line-height: 30px;
-  background-color: aqua;
-  .block_text {
-    font-size: $bg;
-    span {
-      color: rgb(52, 224, 9);
-    }
-  }
-}
-.link {
-  color: rgb(204, 79, 57);
-  text-decoration: underline;
-  font-size: $bg;
-  &:hover {
-    color: $color_1;
-  }
-  @extend %tplborder;
+body {
+  text-align: center;
+  font-size: 55px;
 }
 
 .link-2 {
-  @extend %tplborder;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: $bg;
-
+  background-color: chartreuse;
+  font-size: 55px;
   &:hover {
-    @include fontz(90px, green);
-  }
-  &:active {
-    font-size: 20px;
   }
 }
