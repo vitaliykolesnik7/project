@@ -1,0 +1,65 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+
+//& - повторяет родителя, можно использовать если несколько класов для одного тега
+//$fz - переменные
+//%tpborder - создание шаблона с параметрами
+//@mixin  fontz($f,$c)-мы можем менять значения
+// sass может также сразу делать математику для вычесления размеров или текста или блоков
+
+.wrapper {
+  height: 100%;
+  overflow: hidden;
+  min-height: 100%;
+  padding: 30px;
+}
+.block {
+  text-align: center;
+  font-style: italic;
+  // .block__row
+
+  &__row {
+    border: 15px solid #ece89d;
+    margin: 15px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 700px;
+  }
+  // .block__column
+
+  &__column {
+    border: 10px solid #5e5373;
+    flex: 0 1 auto;
+    // .block__column_1
+
+    &_1 {
+      border-radius: 20px;
+    }
+
+    // .block__column_2
+
+    &_2 {
+    }
+
+    // .block__column_3
+
+    &_3 {
+      border-radius: 20px;
+    }
+  }
+
+  // .block__item
+
+  &__item {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #18b5a4;
+    padding: 10px;
+    font-size: 25px;
+    color: rgba(0, 38, 255, 0.452);
+    font-weight: 700;
+  }
+}
