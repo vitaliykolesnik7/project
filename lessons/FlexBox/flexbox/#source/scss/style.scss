@@ -1,65 +1,296 @@
 // Файл обнуляющих стилей
 @import "nullstyle.scss";
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
 
-//& - повторяет родителя, можно использовать если несколько класов для одного тега
-//$fz - переменные
-//%tpborder - создание шаблона с параметрами
-//@mixin  fontz($f,$c)-мы можем менять значения
-// sass может также сразу делать математику для вычесления размеров или текста или блоков
-
-.wrapper {
-  height: 100%;
-  overflow: hidden;
-  min-height: 100%;
-  padding: 30px;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
-.block {
-  text-align: center;
-  font-style: italic;
-  // .block__row
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 1180px;
+  margin: 0px auto;
+}
+.container {
+}
+.content {
+  flex: 1 1 auto;
+}
+.hi {
+  background-color: #445162;
+  padding: 50px 0px;
+  // .hi__row
 
   &__row {
-    border: 15px solid #ece89d;
-    margin: 15px;
     display: flex;
-
-    flex-direction: column;
-    align-items: stretch;
     justify-content: space-between;
-    height: 700px;
   }
-  // .block__column
+
+  // .hi__body
+
+  &__body {
+    padding-right: 30px;
+    color: #fff;
+  }
+
+  // .hi__title
+
+  &__title {
+    text-shadow: 1px 1px 0 rgb(0, 0, 0, 0.3);
+    font-size: 60px;
+    margin: 0px 0px 38px 0px;
+  }
+
+  // .hi__list
+  &__list {
+    & li {
+      background: url("/lessons/FlexBox/flexbox/img/icons/check\ icon.png") 0
+        1px no-repeat;
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+      font-size: 20px;
+      padding-left: 36px;
+      line-height: 22px;
+      margin-bottom: 15px;
+    }
+    & li:last-child {
+      margin: 0;
+    }
+
+    // .hi__image
+
+    &__image {
+    }
+  }
+}
+
+.title {
+  font-size: 30px;
+  line-height: 36px;
+  color: #445161;
+}
+
+.what {
+  .container {
+    padding: 50px 0;
+  }
+
+  // .what__row
+
+  &__row {
+    display: flex;
+  }
+
+  // .what__imag
+
+  &__imag {
+  }
+
+  // .what__body
+
+  &__body {
+  }
+
+  // .what__title
+
+  &__title {
+    margin-bottom: 33px;
+  }
+
+  // .what__text
+
+  &__text {
+  }
+}
+
+.footer {
+}
+.footer-container {
+  // .footer-container__container
+
+  &__container {
+    background-color: #f5f5f5;
+  }
+
+  // .footer-container__row
+
+  &__row {
+    display: flex;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // .footer-container__text
+
+  &__text {
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 2%;
+    color: #445162;
+
+    text-align: center;
+  }
+}
+// ----------------------------
+.columns {
+  background-color: #f5f5f5;
+  padding: 50px 0 20px 0;
+  /* .columns__title */
+
+  &__title {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  /* .columns__row */
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -8px;
+  }
+
+  /* .columns__column */
 
   &__column {
-    border: 10px solid #5e5373;
-    flex: 0 1 auto;
-    // .block__column_1
-
-    &_1 {
-      border-radius: 20px;
-    }
-
-    // .block__column_2
-
-    &_2 {
-    }
-
-    // .block__column_3
-
-    &_3 {
-      border-radius: 20px;
-    }
+    padding: 0px 8px;
+    flex: 0 1 50%;
+    margin: 0 0 30px 0px;
   }
 
-  // .block__item
+  /* .columns__item */
 
   &__item {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #18b5a4;
-    padding: 10px;
-    font-size: 25px;
-    color: rgba(0, 38, 255, 0.452);
-    font-weight: 700;
   }
+}
+.container {
+}
+.title {
+}
+.item {
+  /* .item__row */
+
+  &__row {
+    display: flex;
+  }
+
+  /* .item__image */
+
+  &__image {
+    flex: 0 0 200px;
+  }
+
+  /* .item__body */
+
+  &__body {
+    flex: 1 1 auto;
+    padding-left: 15px;
+  }
+
+  /* .item__title */
+
+  &__title {
+    color: #445161;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 13px;
+  }
+
+  /* .item__text */
+
+  &__text {
+    color: #333333;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+// ---------------------------------------------------------------------------
+.vertical {
+  padding: 50px 0;
+  /* .vertical__title */
+
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  /* .vertical__body */
+
+  &__body {
+    max-width: 990px;
+    margin: 0px auto;
+  }
+
+  /* .vertical__row */
+
+  &__row {
+    display: flex;
+    margin: 0px -22.5px;
+  }
+
+  /* .vertical__column */
+
+  &__column {
+    display: flex;
+    padding: 0px 22.5px;
+    flex: 0 1 33.333%;
+  }
+
+  /* .vertical__item */
+
+  &__item {
+    background-color: #445162;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #445162;
+    padding: 0 0 20px 0;
+    flex-direction: column;
+  }
+
+  /* .vertical__subtitle */
+
+  &__subtitle {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 12px 0;
+    text-align: center;
+  }
+
+  /* .vertical__label */
+
+  &__label {
+    background-color: #fff;
+    text-align: center;
+    color: #445162;
+    padding: 15px 0;
+    font-size: 40px;
+  }
+
+  /* .vertical__text */
+
+  &__text {
+    padding: 20px;
+    font-style: 14px;
+    line-height: 24px;
+    flex: 1 1 auto;
+  }
+
+  /* .vertical__btn */
+
+  &__btn {
+    display: block;
+    margin: 0 20px;
+    height: 40px;
+    background-color: #fff;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
+.container {
+}
+.title {
 }
