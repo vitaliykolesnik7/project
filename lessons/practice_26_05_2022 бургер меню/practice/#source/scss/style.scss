@@ -1,0 +1,203 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@400;500;600&display=swap");
+
+html,
+body {
+  font-family: "Lato";
+  height: 100%;
+}
+
+// Header---------------------------------------------------------------------------------------
+.wrapper {
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0px auto;
+  padding: 0px 0px 0px 0px;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #c6bdd883;
+    z-index: 2;
+  }
+  /* .header__body */
+  &__body {
+    position: relative;
+    height: 158px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 50px;
+  }
+
+  /* .header__logo */
+
+  &__logo {
+    flex: 0 0 94px;
+    position: relative;
+    overflow: hidden;
+    z-index: 4;
+    & img {
+      max-width: 100%;
+    }
+  }
+
+  /* .header__burger */
+
+  &__burger {
+  }
+
+  /* .header__menu */
+
+  &__menu {
+    z-index: 3;
+  }
+
+  /* .header__list */
+
+  &__list {
+    display: flex;
+    position: relative;
+    & li {
+      list-style: none;
+      margin: 0px 0px 0px 20px;
+    }
+    & li:nth-child(1) {
+      margin-left: 0;
+    }
+    & li :nth-child(2) {
+    }
+    & li :nth-child(3) {
+    }
+    & li :nth-child(4) {
+    }
+  }
+
+  /* .header__link */
+
+  &__link {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #4d4959;
+    font-weight: 700;
+
+    --s: 0.2em; /* the thickness of the line */
+    --c: #3fbb19; /* the color */
+
+    color: #0000;
+    padding-bottom: var(--s);
+    background: linear-gradient(90deg, var(--c) 50%, #000 0)
+        calc(100% - var(--_p, 0%)) / 200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.5s;
+  }
+  & li :hover {
+    --_p: 100%;
+  }
+}
+@media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .header__body {
+    height: 80px;
+  }
+  .header__logo {
+    flex: 0 0 60px;
+  }
+  .header__burger {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 4;
+  }
+  .header__burger span {
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+  .header__burger.active span {
+    transform: scale(0);
+  }
+
+  .header__burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+    background-color: #deb1f8a6;
+    padding: 80px 10px 20px 10px;
+    transition: all 0.5s ease 0s;
+    flex-wrap: wrap;
+  }
+  .header__menu.active {
+    top: 0;
+  }
+
+  .header__list {
+    display: block;
+  }
+  .header__list li {
+    margin: 0px 0px 20px 0px;
+  }
+}
+
+// section Top  -----------------------------------------------------------------------------------
+.container {
+}
+.top {
+  /* .top__body */
+  &__body {
+    & img {
+      width: 100%;
+    }
+  }
+}
+
+// --------------------------------------------------------------------------------------------

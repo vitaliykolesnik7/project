@@ -1,0 +1,75 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+  <!-- Заголовок страницы,контейнер для других важных данных(не отображается) -->
+  <head>
+    <!-- Заголовок страницы в браузере -->
+    <title>Адаптивная верстка</title>
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Кодировка страницы -->
+    <!-- С появлением HTML5 можно использовать  -->
+    <meta charset="UTF-8" />
+    <!-- Настройки адаптивности страницы  -->
+    <!-- Адаптивность  -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!-- Краткое описание страницы  -->
+    <meta name="description" content="Что такое мета теги и для чего они нужны" />
+    <!-- Ключевые слова страницы  -->
+    <meta name="keywords" content="мета теги, meta, мета теги для seo" />
+    <!-- Управление доступом поисковых роботов к странице -->
+    <!-- Запрет индексации страницы полностью -->
+    <meta name="robots" content="none" />
+    <!-- Автор страницы -->
+    <meta name="Author" content="Виталий Колесник" />
+    <!-- Авторские права -->
+    <meta name="Copyright" content="" />
+    <!-- Адрес автора -->
+    <meta name="Address" content="ukraine kharkiv, cirkunu" />
+    <!-- локализация сайта, для русскоязычного сайта ru_RU -->
+    <meta property="og:locale" content="ru_RU" />
+  </head>
+  <!-- Отображаемое тело страницы -->
+  <body>
+    <!-- Оболочка -->
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <a href="http://google.com" target="_blank" class="header__logo">
+              <img src="/lessons/practice_26_05_2022/practice/img/Logo.png" alt="" />
+            </a>
+            <div class="header__burger">
+              <span></span>
+            </div>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li><a href="http://google.com" target="_blank" class="header__link">about us</a></li>
+                <li><a href="http://google.com" target="_blank" class="header__link">work</a></li>
+                <li><a href="http://google.com" target="_blank" class="header__link">shop</a></li>
+                <li><a href="http://google.com" target="_blank" class="header__link">contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <section class="top">
+        <div class="container">
+          <div class="top__body">
+            <img src="./img/top.png" alt="top" />
+          </div>
+        </div>
+      </section>
+      <!-- <footer class="footer">
+        <div class="footer-container__container">
+          <div class="footer-container__row">
+            <div class="footer-container__text">Фрилансер по жизни 2019</div>
+          </div>
+        </div>
+      </footer> -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
