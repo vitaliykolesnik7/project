@@ -84,7 +84,7 @@ body {
 .container {
   max-width: 1600px;
   margin: 0px auto;
-  padding: 0px 15px 0px 15px;
+  padding: 0px 0px 0px 0px;
 }
 
 .header {
@@ -239,7 +239,6 @@ body {
   /* .top__body */
 }
 .top__body img {
-  position: absolute;
   width: 100%;
 }
 
