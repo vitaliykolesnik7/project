@@ -95,6 +95,10 @@ body {
   /* .header__link */
   /* .header__logo */
 }
+.header__menu {
+  max-width: 500px;
+  margin: 0px auto;
+}
 .header__list {
   display: flex;
   flex: 0 0 94px;
