@@ -24,16 +24,15 @@ body {
   /* .header__menu */
 
   &__menu {
-    position: relative;
   }
 
   /* .header__list */
 
   &__list {
     display: flex;
+
     flex: 0 0 94px;
     justify-content: space-evenly;
-    padding: 0px 487px;
     align-items: center;
 
     & li {
@@ -74,7 +73,6 @@ body {
   // .about-us__body
 
   &__body {
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;

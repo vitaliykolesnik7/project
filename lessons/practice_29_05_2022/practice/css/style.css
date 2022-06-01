@@ -95,14 +95,10 @@ body {
   /* .header__link */
   /* .header__logo */
 }
-.header__menu {
-  position: relative;
-}
 .header__list {
   display: flex;
   flex: 0 0 94px;
   justify-content: space-evenly;
-  padding: 0px 487px;
   align-items: center;
 }
 .header__list li {
@@ -123,7 +119,6 @@ body {
 }
 
 .about-us__body {
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
