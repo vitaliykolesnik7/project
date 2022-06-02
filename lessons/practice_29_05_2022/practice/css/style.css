@@ -123,22 +123,31 @@ body {
 }
 
 .about-us__body {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  justify-content: center;
+  margin: 0px auto;
   padding-top: 118px;
   height: 469px;
   background-color: #f7f7f7;
 }
-.about-us__text {
+.about-us__icon {
   display: flex;
-  width: 1080px;
-  height: 190px;
+  justify-content: center;
+}
+.about-us__title {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 4px;
+  color: #353738;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 38px;
+}
+.about-us__text {
+  text-align: center;
   font-size: 18px;
   line-height: 34px;
   color: #848789;
   font-weight: 400;
+  margin-top: 32px;
 }
 
 /*# sourceMappingURL=style.css.map */
