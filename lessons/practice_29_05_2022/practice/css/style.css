@@ -123,10 +123,14 @@ body {
 }
 
 .about-us {
-  margin: 0px auto;
+  display: flex;
   padding-top: 118px;
   height: 469px;
   background-color: #f7f7f7;
+  /* .about-us__body */
+}
+.about-us__body {
+  max-width: 1100px;
 }
 .about-us__icon {
   display: flex;
