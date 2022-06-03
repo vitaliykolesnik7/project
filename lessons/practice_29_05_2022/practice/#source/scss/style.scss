@@ -111,3 +111,48 @@ body {
   }
 }
 // --------------------------------------------------------------------------------------------------
+.brands {
+  display: flex;
+}
+.vintage-Oliva {
+  display: flex;
+  /* .vintage-Oliva__row1 */
+
+  &__row1 {
+  }
+
+  /* .vintage-Oliva__row2 */
+
+  &__row2 {
+    margin-top: 70px;
+  }
+
+  /* .vintage-Oliva__title */
+
+  &__title {
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: #353738;
+    font-weight: 700;
+
+    text-align: center;
+  }
+
+  /* .vintage-Oliva__text */
+
+  &__text {
+    padding-top: 28px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #848789;
+    font-weight: 400;
+
+    text-align: left;
+  }
+}
+.icon {
+  display: flex;
+  justify-content: center;
+}
+.img {
+}
