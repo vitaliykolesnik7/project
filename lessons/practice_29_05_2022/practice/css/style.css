@@ -154,13 +154,27 @@ body {
   margin-top: 32px;
 }
 
-.vintage-Oliva {
-  /* .vintage-Oliva__row1 */
-  /* .vintage-Oliva__icon */
-  /* .vintage-Oliva__row2 */
-  /* .vintage-Oliva__title */
-  /* .vintage-Oliva__text */
-  /* .vintage-Oliva__img */
+.vintage-oliva {
+  display: flex;
+  /* .vintage-oliva__row1 */
+  /* .vintage-oliva__icon */
+  /* .vintage-oliva__row2 */
+  /* .vintage-oliva__title */
+  /* .vintage-oliva__text */
+  /* .vintage-oliva__img */
+}
+.vintage-oliva__row1 {
+  width: 1067px;
+  height: 600px;
+}
+.vintage-oliva__row2 {
+  flex-direction: column;
+}
+.vintage-oliva__img {
+  align-items: flex-end;
+}
+.vintage-oliva__img img {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

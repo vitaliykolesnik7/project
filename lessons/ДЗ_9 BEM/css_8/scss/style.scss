@@ -1,52 +1,64 @@
 // Файл обнуляющих стилей
 @import "nullstyle.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap");
 
-//& - повторяет родителя, можно использовать если несколько класов для лдного тега
-//$fz - переменные
-//%tpborder - создание шаблона с параметрами
-//@mixin  fontz($f,$c)-мы можем менять значения
-// sass может также сразу делать математику для вычесления размеров или текста или блоков
+body {
+  font-family: "Lato";
+}
 
 .about {
+  /* .about__body */
+
   &__body {
   }
+
+  /* .about__header */
+
   &__header {
   }
+
+  /* .about__title */
+
   &__title {
-    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Lato";
+    text-transform: uppercase;
+    letter-spacing: 8.95x;
   }
+
+  /* .about__text */
+
   &__text {
+    font-size: 34px;
+    font-weight: 700;
   }
+
+  /* .about__row */
+
   &__row {
   }
+
+  /* .about__column */
+
   &__column {
   }
 }
 .title {
-  font-size: 34px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 8.95px;
-  position: relative;
-  text-align: center;
-  padding: 0px 0px 30px 0px;
-  &:after {
-    content: "";
-    position: absolute;
-    width: 50px;
-    bottom: 0;
-    height: 1px;
-    left: 50%;
-    background-color: #000;
-    margin: 0 0 0 -25px;
-  }
 }
-
 .item-about {
+  /* .item-about__icon */
+
   &__icon {
   }
+
+  /* .item-about__title */
+
   &__title {
   }
+
+  /* .item-about__text */
+
   &__text {
   }
 }

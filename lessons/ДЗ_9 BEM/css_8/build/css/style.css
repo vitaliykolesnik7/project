@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -9,6 +10,8 @@
 *,
 *:before,
 *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -88,27 +91,33 @@ h6 {
 }
 
 /*--------------------*/
-.about__title {
-  margin-bottom: 30px;
+body {
+  font-family: "Lato";
 }
 
-.title {
+.about {
+  /* .about__body */
+  /* .about__header */
+  /* .about__title */
+  /* .about__text */
+  /* .about__row */
+  /* .about__column */
+}
+.about__title {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Lato";
+  text-transform: uppercase;
+  letter-spacing: 8.95x;
+}
+.about__text {
   font-size: 34px;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 8.95px;
-  position: relative;
-  text-align: center;
-  padding: 0px 0px 30px 0px;
+}
+.item-about {
+  /* .item-about__icon */
+  /* .item-about__title */
+  /* .item-about__text */
 }
 
-.title:after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  bottom: 0;
-  height: 1px;
-  left: 50%;
-  background-color: #000;
-  margin: 0 0 0 -25px;
-}
+/*# sourceMappingURL=style.css.map */
