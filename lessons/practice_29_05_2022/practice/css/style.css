@@ -89,31 +89,25 @@ body {
 .header {
   position: absolute;
   width: 100%;
-  top: 35px;
   /* .header__menu */
+  /* .header__logo */
   /* .header__list */
   /* .header__link */
-  /* .header__logo */
 }
 .header__menu {
-  max-width: 500px;
-  margin: 0px auto;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 0px 50% auto;
+}
+.header__logo {
+  order: 3;
 }
 .header__list {
   display: flex;
-  flex: 0 0 94px;
-  justify-content: space-evenly;
+  justify-items: center;
   align-items: center;
-}
-.header__list li {
-  margin: 0 10px 0 0;
-}
-.header__link {
-  font-size: 13px;
-  letter-spacing: 4.3%;
-  color: #4d4959;
-  font-weight: 700;
-  text-transform: uppercase;
+  margin: 0px 50% auto;
 }
 .top {
   /* .top__body */
