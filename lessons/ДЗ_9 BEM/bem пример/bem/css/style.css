@@ -79,6 +79,29 @@ body {
   font-family: Lato;
 }
 
+.mainblock {
+  position: relative;
+  /* .mainblock__content */
+  /* .mainblock__logo */
+  /* .mainblock__text */
+  /* .mainblock__title */
+  /* .mainblock__subtitle */
+  /* .mainblock__footer */
+  /* .mainblock__btn */
+  /* .mainblock__arrow */
+  /* .mainblock__image */
+}
+.mainblock__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.btn {
+  /* .btn_w */
+}
 .about {
   /* .about__body */
   /* .about__header */
