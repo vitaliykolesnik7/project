@@ -16,175 +16,18 @@ body {
   max-width: 1600px;
   margin: 0px auto;
 }
-// .header {
-//   position: absolute;
-//   width: 100%;
-//   top: 35px;
-
-//   /* .header__menu */
-
-//   &__menu {
-//     max-width: 500px;
-//     margin: 0px auto;
-//   }
-
-//   /* .header__list */
-
-//   &__list {
-//     display: flex;
-//     flex: 0 0 94px;
-//     justify-content: space-evenly;
-//     align-items: center;
-
-//     & li {
-//       margin: 0 10px 0 0;
-//     }
-//   }
-
-//   /* .header__link */
-
-//   &__link {
-//     font-size: 13px;
-//     letter-spacing: 4.3%;
-//     color: #4d4959;
-//     font-weight: 700;
-//     text-transform: uppercase;
-//   }
-
-//   /* .header__logo */
-
-//   &__logo {
-//   }
-//
-.header {
-  position: absolute;
-  width: 100%;
-  /* .header__menu */
-
-  &__menu {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    margin: 0px 50% auto;
-  }
-
-  /* .header__logo */
-
-  &__logo {
-    order: 3;
-  }
-
-  /* .header__list */
-
-  &__list {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    margin: 0px 50% auto;
-  }
-
-  /* .header__link */
-
-  &__link {
-  }
+.footer {
 }
 .container {
 }
+.footer-container {
+  // .footer-container__row
 
-//-tOp section-----------------------------------------------------------------------------------------------
-.top {
-  /* .top__body */
-
-  &__body {
-  }
-  & img {
-    max-width: 100%;
-  }
-}
-// --------------------------------------------------------------------------------------------------
-
-.about-us {
-  display: flex;
-
-  padding-top: 118px;
-  height: 469px;
-
-  /* .about-us__body */
-
-  &__body {
-    max-width: 1100px;
-    background-color: #f7f7f7;
+  &__row {
   }
 
-  &__icon {
-    display: flex;
-    justify-content: center;
-  }
-
-  // .about-us__title
-
-  &__title {
-    text-align: center;
-    font-size: 18px;
-    letter-spacing: 4px;
-    color: #353738;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 38px;
-  }
-
-  // .about-us__text
+  // .footer-container__text
 
   &__text {
-    text-align: center;
-    font-size: 18px;
-    line-height: 34px;
-    color: #848789;
-    font-weight: 400;
-    margin-top: 32px;
-  }
-}
-// --------------------------------------------------------------------------------------------------
-.brands {
-}
-.container {
-}
-.vintage-oliva {
-  display: flex;
-  /* .vintage-oliva__row1 */
-
-  &__row1 {
-    width: 1067px;
-    height: 600px;
-  }
-
-  /* .vintage-oliva__icon */
-
-  &__icon {
-  }
-
-  /* .vintage-oliva__row2 */
-
-  &__row2 {
-    flex-direction: column;
-  }
-
-  /* .vintage-oliva__title */
-
-  &__title {
-  }
-
-  /* .vintage-oliva__text */
-
-  &__text {
-  }
-
-  /* .vintage-oliva__img */
-
-  &__img {
-    align-items: flex-end;
-    & img {
-      max-width: 100%;
-    }
   }
 }
