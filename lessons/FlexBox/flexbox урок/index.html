@@ -1,0 +1,210 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+  <!-- Заголовок страницы,контейнер для других важных данных(не отображается) -->
+  <head>
+    <!-- Заголовок страницы в браузере -->
+    <title>FlexBox</title>
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Кодировка страницы -->
+    <!-- С появлением HTML5 можно использовать  -->
+    <meta charset="UTF-8" />
+    <!-- Настройки адаптивности страницы  -->
+    <!-- Адаптивность  -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!-- Краткое описание страницы  -->
+    <meta name="description" content="Что такое мета теги и для чего они нужны" />
+    <!-- Ключевые слова страницы  -->
+    <meta name="keywords" content="мета теги, meta, мета теги для seo" />
+    <!-- Управление доступом поисковых роботов к странице -->
+    <!-- Запрет индексации страницы полностью -->
+    <meta name="robots" content="none" />
+    <!-- Автор страницы -->
+    <meta name="Author" content="Виталий Колесник" />
+    <!-- Авторские права -->
+    <meta name="Copyright" content="" />
+    <!-- Адрес автора -->
+    <meta name="Address" content="ukraine kharkiv, cirkunu" />
+    <!-- локализация сайта, для русскоязычного сайта ru_RU -->
+    <meta property="og:locale" content="ru_RU" />
+    <!-- тип контента, по умолчанию используется article -->
+    <meta property="og:type" content="article" />
+  </head>
+  <!-- Отображаемое тело страницы -->
+  <body>
+    <!-- Оболочка -->
+    <div class="wrapper">
+      <div class="content">
+        <div class="hi">
+          <div class="container">
+            <div class="hi__row">
+              <div class="hi__body">
+                <div class="hi__title">Привет, друг!</div>
+                <ul class="hi__list">
+                  <li>У тебя все получится!</li>
+                  <li>Никогда не сдавайся!</li>
+                  <li>Сегодня ты уже знаешь больше чем вчера!</li>
+                  <li>Спасибо тебе за поддержку!</li>
+                </ul>
+              </div>
+              <div class="hi__image">
+                <img src="/lessons/FlexBox/flexbox урок/img/hi.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="whatisthis">
+          <div class="container">
+            <div class="whatisthis__row">
+              <div class="whatisthis__picture">
+                <a href="http://google.com" target="_blank">
+                  <img src="/lessons/FlexBox/flexbox урок/img/picture2.png" alt="picture2" />
+                </a>
+              </div>
+              <div class="whatisthis__body">
+                <div class="whatisthis__title title">Что такое FlexBox?</div>
+                <div class="whatisthis__text">
+                  <p>
+                    Flexbox - это целый модуль, содержащий в себе набор свойств и их значений как для родителя
+                    flex-контейнера так и для его дочерних элементов flex-элементов.
+                  </p>
+                  <p>
+                    Основным преимуществом гибкой FLEX разметки является возможность изменять ширину/высоту пространство
+                    вокруг и порядок flex-элементов, для того чтобы наилучшим образом заполнить доступное пространство
+                    flex-контейнера
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="container">
+            <div class="columns__title title">Колонки с flex-контейнерами</div>
+            <div class="columns__row">
+              <div class="columns__column">
+                <div class="columns__item item">
+                  <div class="item__row">
+                    <div class="item__image"><img src="./img/image.png" alt="" /></div>
+                    <div class="item__dody">
+                      <div class="item__title">The description for the image</div>
+                      <div class="item__text">
+                        Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam
+                        quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo
+                        debitis dolor.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="columns__column">
+                <div class="columns__item item">
+                  <div class="item__row">
+                    <div class="item__image"><img src="./img/image.png" alt="" /></div>
+                    <div class="item__dody">
+                      <div class="item__title">The description for the image</div>
+                      <div class="item__text">
+                        Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam
+                        quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo
+                        debitis dolor.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="columns__column">
+                <div class="columns__item item">
+                  <div class="item__row">
+                    <div class="item__image"><img src="./img/image.png" alt="" /></div>
+                    <div class="item__dody">
+                      <div class="item__title">The description for the image</div>
+                      <div class="item__text">
+                        Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam
+                        quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo
+                        debitis dolor.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="columns__column">
+                <div class="columns__item item">
+                  <div class="item__row">
+                    <div class="item__image"><img src="./img/image.png" alt="" /></div>
+                    <div class="item__dody">
+                      <div class="item__title">The description for the image</div>
+                      <div class="item__text">
+                        Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam
+                        quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo
+                        debitis dolor.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vertical">
+          <div class="container">
+            <div class="vertical__title title">Vertical alignment</div>
+            <div class="vertical__body">
+              <div class="vertical__row">
+                <div class="vertical__column">
+                  <div class="vertical__item">
+                    <div class="vertical__subtitle">буду рад</div>
+                    <div class="vertical__lable">подписке</div>
+                    <div class="vertical__text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint tenetur fugit vel, eligendi illum,
+                      placeat quo vero reiciendis consectetur.
+                    </div>
+                    <a href="http://google.com" target="_blank" class="vertical__btn">подписаться</a>
+                  </div>
+                </div>
+                <div class="vertical__column">
+                  <div class="vertical__item">
+                    <div class="vertical__subtitle">буду рад</div>
+                    <div class="vertical__lable">лайку</div>
+                    <div class="vertical__text">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint tenetur fugit vel, eligendi
+                        illum, placeat quo vero reiciendis consectetur voluptatibus atque et itaque, hic, deleniti. Sunt
+                        commodi tempora voluptatum dolorum.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint tenetur fugit vel, eligendi
+                        illum, placeat quo vero reiciendis consectetur tempora voluptatum dolorum.
+                      </p>
+                    </div>
+                    <a href="http://google.com" target="_blank" class="vertical__btn">Лайк</a>
+                  </div>
+                </div>
+                <div class="vertical__column">
+                  <div class="vertical__item">
+                    <div class="vertical__subtitle">комментарий</div>
+                    <div class="vertical__lable">комментарий</div>
+                    <div class="vertical__text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint tenetur fugit vel, eligendi illum,
+                      placeat quo vero reiciendis consectetur.
+                    </div>
+                    <a href="http://google.com" target="_blank" class="vertical__btn">комментарий</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__row">
+            <div class="footer__text">Фрилансер по жизни 2019</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
