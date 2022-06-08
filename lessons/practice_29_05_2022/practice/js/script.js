@@ -1,6 +1,16 @@
+//Меню бургер
 $(document).ready(function () {
-  $(".header__burger").click(function (event) {
-    $(".header__burger, .header__menu").toggleClass("active");
-    $("body").toggleclass("lock");
+  $(".icon-menu").click(function (event) {
+    $(".icon-menu,.menu__body").toggleClass("active");
+    $("body").toggleClass("lock");
   });
+});
+
+//IBG
+document.querySelectorAll(".ibg").forEach((el) => {
+  if (el.querySelector("img")) {
+    el.style.backgroundImage =
+      "url(" + el.querySelector("img").getAttribute("src") + ")";
+    el.querySelector("img").style.display = "none";
+  }
 });
