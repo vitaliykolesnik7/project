@@ -5,8 +5,12 @@ $(document).ready(function () {
     $("body").toggleClass("lock");
   });
 });
+let ready = (callback) => {
+  if (document.readyState != "loading") callback();
+  else document.addEventListener("DOMContentLoaded", callback);
+};
 
-//IBG
+//IBG  подключение картинки background
 document.querySelectorAll(".ibg").forEach((el) => {
   if (el.querySelector("img")) {
     el.style.backgroundImage =
