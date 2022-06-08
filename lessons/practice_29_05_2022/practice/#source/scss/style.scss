@@ -355,5 +355,58 @@ body {
     line-height: 34px;
     color: #848789;
     font-weight: 400;
+    &_j {
+      font-style: 16px;
+      text-align: justify;
+      line-height: 30px;
+      &:after {
+        content: "";
+      }
+    }
+  }
+}
+//===================================================================================================
+.brands {
+  // .brands__row
+
+  &__row {
+    @include flexbox();
+  }
+
+  // .brands__column
+
+  &__column {
+    flex: 0 1 33.333%;
+    // .brands__column_b
+
+    &_b {
+      flex: 0 1 66.667%;
+    }
+  }
+
+  // .brands__item
+
+  &__item {
+  }
+
+  // .brands__content
+
+  &__content {
+  }
+
+  // .brands__image
+
+  &__image {
+  }
+}
+.item {
+  // .item__logo
+
+  &__logo {
+  }
+
+  // .item__image
+
+  &__image {
   }
 }

@@ -335,5 +335,28 @@ body {
   color: #848789;
   font-weight: 400;
 }
+.block__text_j {
+  font-style: 16px;
+  text-align: justify;
+  line-height: 30px;
+}
+.block__text_j:after {
+  content: "";
+}
+
+.brands__row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+}
+.brands__column {
+  flex: 0 1 33.333%;
+}
+.brands__column_b {
+  flex: 0 1 66.667%;
+}
 
 /*# sourceMappingURL=style.css.map */
